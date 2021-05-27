@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handlebar JS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <script id='student-template' type='text/x-handlebars-template'>
+    <div>{{name}}</div></script>
+    <script src='./shoes.js'></script>
+
+    <script id='shoes-template' type='text/x-handlebars-template'>
+        {{#each shoes}}
+        <div class="card" style="width: 18rem;">
+            <img src={{url_170x135}} class="card-img-top" alt={{title}}>
+            <div class="card-body">
+              <h5 class="card-title">{{title}}</h5>
+              <p class="card-text">{{description}}</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+    {{/each}}
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script src="./scripts/main.js"></script>
+</body>
+
+</html>
