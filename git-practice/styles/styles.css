@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: right;
+  color: purple;
+}
